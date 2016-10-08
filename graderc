@@ -1,0 +1,13 @@
+[[ -d ${GRADER} ]] || { echo "grader: resources not found"; exit -1; }
+
+# preserve usual bash configurations
+source /etc/profile
+
+# for package inclusion semantics
+# actually works like require() in ruby or javascript
+# but we're obsessed with C
+INCLUDE="${GRADER}/resources"
+source ${INCLUDE}/util/include 
+
+# let's go to where the party is at!
+source ${GRADER}/resources/core

@@ -1,0 +1,29 @@
+include util/{landau_logger,prompt}
+#include student labs rubric
+
+# the fun begins here
+#
+# should include all dependencies here
+# and also set up some handy aliases
+#
+# should also retrieve parameters from expored env variables
+# and ask for them if missing
+
+# current state
+# lab: name of lab dir
+# student: name of student submission dir
+# rubric: name of corrent rubric item
+# ta: name of ta responsible grading
+
+# "packages":
+# s: student (switching labs)
+# r: rubrik/test (running tests, writing grades)
+# l: lab (switching labs)
+# g: grade (outputting grade)
+
+# potential aliases:
+# cs: change student -> s::goto
+# cr: change rubrik -> r::goto
+# ...: goto student home dir -> s::root
+# alias ...="cd ${SUBMIT_REPO}/${lab}/${student}"
+# cl: change lab -> l::goto

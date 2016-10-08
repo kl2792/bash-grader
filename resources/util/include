@@ -1,0 +1,23 @@
+# include like semantics for bash
+
+include()
+{
+        [[ ${INCLUDE} ]] || return
+        for dependency in "$@"
+        do
+                _include "${INCLUDE}/${dependency}"
+        done
+}
+
+_include()
+{
+        eval "[[ \${__${1##*/}-undefined} ]] || return" # already included
+
+        if ! [[ -f ${1} ]]
+        then
+                echo "include: ${1} not found"
+                return -1
+        fi
+
+        source ${1} && readonly "__${1##*/}=" # source + define guard variable
+}

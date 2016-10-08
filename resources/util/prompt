@@ -1,0 +1,8 @@
+
+# ideally we have a pimped out prompt
+# to easily observe grader state
+
+# should show lab, student, rubric item
+# could show current score tally, max possible score for curent item
+
+PS1='`echo ${lab}`::`echo ${student}` $ '

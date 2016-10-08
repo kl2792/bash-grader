@@ -1,0 +1,33 @@
+# assign grade to specific rubrik item
+r::grade()
+{
+        :
+}
+
+# run test for rubrik item
+r::run()
+{
+        :
+}
+
+# grade a specific rubrik item
+r::comment()
+{
+        :
+}
+
+
+r::goto()
+{
+        :
+}
+
+r::nxt()
+{
+        :
+}
+
+r::prv()
+{
+        :
+}

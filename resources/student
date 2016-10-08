@@ -1,0 +1,27 @@
+
+
+s::root()
+{
+        cd ${REPO}/${lab}/${student} 
+}
+
+s::goto()
+{
+        if [[ -d ${REPO}/${lab}/${1} ]]
+        then
+                student=${1}  
+                s::root
+        else
+                e_error "submisssion from ${student} not found"
+        fi
+}
+
+s::nxt()
+{
+        :
+}
+
+s::prv()
+{
+        :
+}
