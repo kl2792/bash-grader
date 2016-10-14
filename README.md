@@ -1,7 +1,7 @@
 # bash-grader
 > Make AP grade again!
 
-The Bourne Aagin SHell grader is an interactive grading shell building upon bash.
+The Bourne Again SHell grader is an interactive grading shell building upon bash.
 It is in dire need of a catchier, punnier name.
 
 This grader is based on the internal `sh-grader`, written by Dale Zhao,
